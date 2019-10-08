@@ -1,8 +1,21 @@
+@font-face {
+  font-family: "CenturyGothic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/CenturyGothic.eot"); /* IE9 Compat Modes */
+  src: local("CenturyGothic"), local("CenturyGothic"),
+    url("fonts/CenturyGothic.eot") format("embedded-opentype"),
+    /* IE6-IE8 */ url("fonts/CenturyGothic.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("fonts/CenturyGothic.woff") format("woff"),
+    /* Modern Browsers */ url("fonts/CenturyGothic.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("fonts/centuryGothicBold.svg") format("svg"); /* Legacy iOS */
+}
+
 /*******************************************
 BODY
 *******************************************/
 body {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "CenturyGothic", sans-serif;
   font-weight: 400;
   font-size: 1em;
   color: #363636;
@@ -73,15 +86,16 @@ EXPERIENCES
   margin-bottom: 15px;
 }
 .job .where {
-  font-size: 1.4em;
+  font-size: 1.5em;
   font-weight: bold;
+  color: #808181;
 }
 .job .year {
   font-size: 1.3em;
   opacity: 0.7;
 }
 .job .profession {
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-weight: bold;
 }
 .job .description {
@@ -136,7 +150,7 @@ SKILLS
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-weight: 600;
 }
 .skills-legend {
@@ -184,23 +198,6 @@ SKILLS
 .legend-right {
   text-align: right;
 }
-/*******************************************
-LANGUAGES
-*******************************************/
-#language-skills .skill {
-  font-size: 1.3em;
-  margin: 10px 0;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
-}
-#language-skills .skill .icons {
-  width: 111px;
-  height: 14px;
-  background: url(../img/star-grey.png) no-repeat;
-}
-#language-skills .skill .icons-red {
-  background: url(../img/star-red.png) no-repeat;
-}
 
 .hobby {
   color: #fff;
@@ -210,7 +207,7 @@ LANGUAGES
   padding: 5px 5px 5px 25px;
   background: #40424a;
   position: relative;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 .hobby:before {
   content: "\f164";
@@ -231,7 +228,7 @@ h6 {
   color: #40424a;
   margin: 0;
   font-weight: 600;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "CenturyGothic", sans-serif;
 }
 
 h2 {
@@ -244,7 +241,7 @@ h3 {
 
 p {
   font-size: 18px;
-  color: #808181;
+  color: #40424a;
   line-height: 1.8;
 }
 
